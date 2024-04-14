@@ -1,0 +1,155 @@
+:root {
+    --blanc: #dedede;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body .arau {
+    font-family: 'Poppins', sans-serif;
+    font-size: 8px;
+    color: var(--blanc);
+    margin-left: 10px;
+    margin-top: 10px;
+    position: fixed;
+    top: 10px;
+    left: 15px;
+}
+
+body .gmail {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: var(--blanc);
+    margin-right: 10px;
+    margin-top: 10px;
+    position: fixed;
+    top: 10px;
+    right: 15px;
+}
+
+body .arau:hover {
+    cursor: pointer;
+}
+
+body .cos .logo img {
+    width: 500px;
+    color: var(--blanc);
+}
+
+body .cos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+body .cos .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+body .cos .links a {
+    text-transform: uppercase;
+    margin: 10px;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--blanc);
+    padding-bottom: 0.75rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: var(--blanc);
+    transition: all 0.3s ease;
+}
+
+body .cos .links a:hover {
+    color: rgb(251, 226, 5);
+}
+
+.links a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--blanc);
+    margin-top: -10px;
+    transition: all 0.3s ease;
+}
+
+.links a:hover::after {
+    width: 100%;
+}
+
+body .cul .instagram a {
+    font-family: 'Poppins', sans-serif;
+    color: var(--blanc);
+    font-size: 28px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    position: fixed;
+    bottom: 10px;
+    left: 15px;
+    transition: all 0.3s ease;
+}
+
+body .cul .instagram a:hover{
+    color: #f1758e;
+}
+
+.roba {
+    padding-top: 1100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas en cada fila */
+    grid-auto-rows: auto; /* Altura automática para las filas */
+    gap: 10px; /* Espacio entre las imágenes */
+    width: 80%; /* Ocupa el 80% del ancho de la pantalla */
+    margin: auto; /* Centrar el contenedor */
+    align-items: center; /* Centrar verticalmente el contenido */
+}
+
+.roba img {
+    width: 100%; /* Ajustar el ancho de las imágenes al 100% del contenedor */
+    height: auto; /* Mantener la proporción de aspecto */
+    margin: -13px 0;
+    transition: opacity 0.3s ease; /* Agregar transición para suavizar el cambio */
+}
+
+.roba img:hover {
+    opacity: 0.7; /* Hacer que la imagen sea opaca al 70% cuando se coloca el cursor sobre ella */
+}
+
+.footer {
+    color: var(--blanc);
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: bold; /* Hace que el texto esté en negrita */
+}
